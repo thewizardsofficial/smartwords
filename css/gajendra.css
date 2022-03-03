@@ -1,0 +1,239 @@
+*{
+    font-size: 14px;
+}
+nav{
+    min-height: 2rem;
+    height: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    top: 0;
+}
+nav ul{
+    height: 100%;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    height: 100%;
+    width: fit-content;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+nav ul:last-child li{
+    height: calc(100% - 1rem);
+    margin: 0;
+    padding:  0.5rem;
+    line-height: 1rem;
+}
+.nav{
+    height: auto;
+    width: 100%;
+    top: 2.05rem;
+    justify-content: left;
+    display: block;
+}
+.nav .page-title{
+    height: calc(100% - 0.3rem);
+    width: fit-content;
+    font-size: 2rem;
+    margin-left: 1rem;
+    float: left;
+    clear: left;
+}
+
+.fa-book{
+    font-size: 1.8rem;
+}
+
+.nav ul{
+    height: auto;
+    width: fit-content;
+    clear: right;
+    float: right;
+    margin-right: 0;
+}
+.nav ul div{
+    display: flex;
+}
+.nav ul a li{
+    height: auto;
+    width: fit-content;
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+.home{
+    display: none;
+}
+.nav ul ul{
+    display: none;
+}
+.fa-list-ul{
+    display: none;
+}
+
+.nav ul div .fa-home{
+    line-height: 1rem;
+}
+
+@media screen and (max-width:1325px){
+    .nav ul a li{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:1250px){
+    .nav ul a li{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width:1111px){
+    nav ul li{
+        font-size: 0.7rem;
+    }
+    .nav ul a li{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:1027px){
+    nav{
+        width: 40%;
+        min-width: 20rem;
+        height: auto;
+        position: absolute;
+        z-index: 155;
+        top: 14.5rem;
+        right: 0;
+        border-bottom: none;
+        display: none;
+    }
+    .home2{
+        display:none;
+    }
+    nav ul{
+        width: 100%;
+        height: auto;
+        display: none;
+
+    }
+    nav ul:nth-child(4){
+        display: none;
+    }
+    nav ul li{
+        width: 100%;
+        height: fit-content;
+        margin: 0 ;
+        font-size: 0.9rem;
+        padding: 0.2 0.5rem;
+        text-align: center;
+    }
+    .fa-list-ul{
+        float: right;
+        margin: 0.8rem 2rem;
+        font-size: 1.3rem;
+        display: block;
+        cursor: pointer;
+    }
+    .fa-list-ul:hover{
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+    }
+    .nav{
+        height: fit-content;
+        width: 100%;
+        max-height: 3rem;
+        top: 0;
+        z-index: 150;
+        
+    }
+    .nav ul.nv .home{
+        font-size: 1rem;
+        text-align: center;
+        height: auto;
+        width: calc(100%);
+        display: block;
+    }
+    .nav ul.nv{
+        width: 40%;
+        min-width: 20rem;
+        height: auto;
+        background: #FFFDD0;
+        z-index: 555;
+        display: block;
+        border-top: 0.2rem solid #000;
+        margin-top: 0rem;
+        margin-right: 0%;
+        transition: margin 0.5s linear;
+    }
+
+    .nav ul.nv div{
+        height: fit-content;
+        width: calc(100% - 2.5rem);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        left: 0;
+        background: #FFFDD0;
+        margin: 0 auto;
+        margin-left: 2.5rem;
+    }
+    .fa-home{
+        display: none;
+    }
+    .nav ul.nv div li{
+        width: fit-content;
+        height: auto;
+        margin: 0.5rem;
+    }
+    .nav ul.nv ul{
+        height: auto;
+        width: 100%;
+        display:block;
+        margin: 0;
+        border: none;
+    }
+    .nav ul.nv ul li{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    
+}
+
+iframe.navigation-bar{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 155;
+}
+iframe.footer{
+    min-height: 16.5rem;
+    width: 100%;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+iframe::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    iframe.footer{
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width:537px){
+    iframe.footer{
+        height: 41rem;
+    }
+}
